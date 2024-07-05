@@ -1,0 +1,14 @@
+.FormSignUp {
+  width: 400px;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+.FormSignUp__title {
+  font-family: "Arsenal SC", sans-serif;
+  font-weight: 700;
+}/*# sourceMappingURL=FormSignUp.module.css.map */

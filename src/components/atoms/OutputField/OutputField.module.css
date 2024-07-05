@@ -1,0 +1,16 @@
+.OutputField {
+  width: 600px;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  font-family: "Amatic SC", sans-serif;
+  font-size: 34px;
+  font-weight: 700;
+}
+.OutputField__text {
+  color: #fff;
+}
+.OutputField__value {
+  color: white;
+  opacity: 0.3;
+}/*# sourceMappingURL=OutputField.module.css.map */

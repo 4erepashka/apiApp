@@ -1,0 +1,41 @@
+.RoleField {
+  width: 400px;
+  height: 70px;
+  border-radius: 10px;
+  background-color: #fff;
+  position: relative;
+  display: flex;
+  font-family: "Amatic SC", sans-serif;
+  font-size: 34px;
+  font-weight: 700;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: center;
+  color: #000;
+  text-transform: uppercase;
+  text-shadow: 1px;
+  align-items: center;
+}
+.RoleField::after {
+  content: "";
+  position: absolute;
+  top: 1px;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  filter: blur(15px);
+  background: linear-gradient(to left, #ff5770, #e4428d, #c42da8, #9e16c3, #6501de, #9e16c3, #c42da8, #e4428d, #ff5770);
+  background-size: 200% 200%;
+  animation: animateGlow 1.25s linear infinite;
+}
+
+@keyframes animateGlow {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 200% 50%;
+  }
+}/*# sourceMappingURL=RoleField.module.css.map */

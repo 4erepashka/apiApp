@@ -1,0 +1,48 @@
+.InputSignUpWrapper
+    width: 400px
+    height: 60px
+    border-radius: 10px
+    background-color: #ff5770
+    border: none
+    position: relative  
+    display: flex
+    font-family: "Amatic SC", sans-serif
+    font-size: 34px
+    font-weight: 700
+    justify-content: center
+    flex-wrap: wrap
+    text-align: center
+    color: #000
+    text-transform: uppercase
+    text-shadow: 1px
+    align-items: center
+    &::after
+        content: ''
+        position: absolute
+        top: 1px
+        left: 0
+        right: 0
+        z-index: -1
+        height: 100%
+        width: 100%
+        filter: blur(15px)
+        background: linear-gradient(to left, #ff5770,#e4428d,#c42da8,#9e16c3,#6501de,#9e16c3,#c42da8,#e4428d,#ff5770)
+        background-size: 200% 200%
+.InputSignUp
+    width: 100%
+    height: 100%
+    background-color: rgba(0, 0, 0, 0)
+    border: none
+    color: #fff
+    font-size: 20px
+    padding: 0
+    padding-left: 10px
+
+    &::placeholder
+        font-size: 20px
+        color: rgba(255, 255,255, .5)
+
+@media (min-width: 360px) and (max-width: 600px)
+    .InputSignUpWrapper
+        width: 320px
+        height: 60px

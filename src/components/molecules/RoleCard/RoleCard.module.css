@@ -1,0 +1,7 @@
+.RoleCard {
+  width: 600px;
+  height: 100px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}/*# sourceMappingURL=RoleCard.module.css.map */

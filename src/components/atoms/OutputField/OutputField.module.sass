@@ -1,0 +1,29 @@
+.OutputField
+    width: 780px
+    height: 60px
+    display: flex
+    justify-content: space-between
+    align-items: center
+    font-family: "Amatic SC", sans-serif
+    font-size: 34px
+    font-weight: 700
+    &__text
+        color: #fff
+    &__value
+        color: #FF5770
+        font-size: 20px
+        width: fit-content
+        height: fit-content
+        text-align: start
+@media (min-width: 360px) and (max-width: 600px)
+    .OutputField
+        width: 320px
+        flex-direction: column
+        margin: 0 auto
+        height: 80px
+        &__text
+            font-size: 24px
+        &__value
+            font-size: 18px
+            width: 100%
+            overflow-x: scroll

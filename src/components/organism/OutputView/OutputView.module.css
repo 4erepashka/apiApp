@@ -1,0 +1,8 @@
+.OutputView {
+  width: 600px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 30px;
+}/*# sourceMappingURL=OutputView.module.css.map */
