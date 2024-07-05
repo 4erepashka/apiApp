@@ -3,7 +3,7 @@ import { ApiOptionParamsType } from './ApiOptionTypes'
 import { useUserContext } from '../../../data/Context/useUserContext'
 const ApiOption = ({text, action}:ApiOptionParamsType)=>{
     const {setOption, currentOption} = useUserContext()
-    function handle(e){
+    function handle(e: React.ChangeEvent<HTMLInputElement>){
         setOption(e.target.value)
     }
     return(

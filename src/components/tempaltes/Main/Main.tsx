@@ -20,7 +20,7 @@ const Main = () =>{
         <>
             <ApiOptionsList/>
             <PacmanLoader style={{position: 'absolute', top:'50%'}} size={30} loading={isloading &&currentOption === 'all' } color="#ff5770"  />
-            {currentOption === 'all' && <RoleList roles = {allroles}/>}
+            {currentOption === 'all' && <RoleList roles = {{ roles: allroles }}/>}
             {currentOption === 'signup' && <FormSignUp/>} 
             {currentOption === 'code' && <FormGetCode/>}
             {currentOption === 'status' && <FormGetStatus/>}

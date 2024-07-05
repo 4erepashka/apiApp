@@ -28,7 +28,7 @@ export interface IDataSignUp{
     first_name: string,
     last_name: string,
     email: string,
-    role: string
+    role: string 
 }
 
 
@@ -65,7 +65,7 @@ const INIT_STATE = {
 
 const UserContextProvoder:React.FC<{ children: ReactNode }>= ({children})=>{
     const [state, dispatch] = useReducer(userReducer, INIT_STATE || {})
-    const [allroles, setallroles] = useState({})
+    const [allroles, setallroles] = useState([])
     const [currentOption, setCurrentOption] = useState('')
     const [isloadingSignUp, setisloadingSignUp] = useState(false)
     const [isloadingGetCode, setisloadingGetCode] = useState(false)

@@ -9,11 +9,14 @@ import { ErrorInput } from "../../atoms/ErrorInput/ErrorInput";
 const FormGetStatus = ()=>{
     const {handlerSetStatus, isloadingSetStatus, state} = useUserContext()
     const [err, setErr] = useState(false)
-    const handlerSubmit = (event)=>{
-        console.log(event.target.token.value)
-        if (event.target.token.value !== '' && event.target.status.value !== ''){
-            handlerSetStatus(event.target.token.value, event.target.status.value)
-            event.target.reset();
+    const handlerSubmit = (event: React.FormEvent<HTMLFormElement>)=>{
+        const form = event.target as HTMLFormElement;
+        const token = form.token.value;
+        const status = form.status.value;
+        console.log(token)
+        if (token !== '' &&  status !== ''){
+            handlerSetStatus(token, status)
+            form.reset();
             setErr(false)
         }else{
             console.log('pfdd')

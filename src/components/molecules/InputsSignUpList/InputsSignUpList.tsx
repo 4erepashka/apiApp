@@ -6,7 +6,7 @@ const InputsSignUpList = ()=>{
             <InputSignUp type='text' name="lastname" placeholder='Фамилия'/>
             <InputSignUp type='text' name="firstname" placeholder='Имя'/>
             <InputSignUp type='email'name="email" placeholder='Email'/>
-            <InputSignUp type='role' name="role" placeholder='Role'/>
+            <InputSignUp type='text' name="role" placeholder='Role'/>
         </div> 
     )
 }

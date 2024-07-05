@@ -9,20 +9,21 @@ import { ErrorInput } from "../../atoms/ErrorInput/ErrorInput";
 const FormSignUp = () =>{
     const {handlerSignUp, state, isloadingSignUp} = useUserContext()
     const [err, setErr] = useState(false)
-    const handlerSubmite = (event)=>{
+    const handlerSubmite = (event: React.FormEvent<HTMLFormElement>)=>{
+        const form = event.target as HTMLFormElement;
         const request = {
-            "last_name": event.target.lastname.value,
-            "first_name": event.target.firstname.value,
-            "email": event.target.email.value,
-            "role": event.target.role.value
+            "last_name": form.lastname.value,
+            "first_name": form.firstname.value,
+            "email": form.email.value,
+            "role": form.value
         }
         if (request.last_name !== '' && request.first_name !== ''  && request.email !== '' && request.role !== '' ){
-            handlerSignUp(request)
-            event.target.reset();
+            form.reset();
             setErr(false)
         }else(
             setErr(true)
         )
+        handlerSignUp(request)
         event.preventDefault() 
     }
     return(
